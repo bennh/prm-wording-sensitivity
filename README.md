@@ -406,8 +406,6 @@ See [audit evidence](results/project_audit/audit_evidence.json), [runtime spot-c
 
 Extensions should be recorded as new experiments. The original formal set and results should remain available, including null or mixed findings.
 
-## Attribution and project license
+## Authors
 
-This project uses the MATH-500 source identified above, the Skywork PRM checkpoint, and the Skywork inference implementation. See their upstream repositories and model/dataset cards for attribution and applicable terms. The upstream inference checkout retains its own license.
-
-A separate license for this project's original code has not yet been selected. No publication DOI, author list, or citation record is asserted by this README.
+Binheng Zheng (Heidelberg University)
