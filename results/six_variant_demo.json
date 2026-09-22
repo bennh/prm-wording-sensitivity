@@ -1,0 +1,80 @@
+{
+  "purpose": "six-variant pipeline demo only; not formal evaluation",
+  "source": "handwritten apple example, not MATH-500",
+  "model": "Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B",
+  "model_snapshot": "98d69606595eedbdbbbf0a7d28efdcd462ba6a67",
+  "device": "mps",
+  "backbone_dtype": "float16",
+  "head_dtype": "float32",
+  "torch_version": "2.14.0",
+  "transformers_version": "4.46.3",
+  "problem": "A shop has 12 apples and receives 3 more. It sells 2 apples. How many apples remain?",
+  "templates": {
+    "B": "{step}",
+    "N": "For this step, {step}",
+    "A": "Without any doubt, {step}"
+  },
+  "results": [
+    {
+      "condition": "C-B",
+      "correct": true,
+      "tone": "B",
+      "step": "After receiving the delivery, the shop has 12 + 3 = 15 apples.",
+      "score": 0.9639497399330139,
+      "input_tokens": 46,
+      "target_token_index": 45
+    },
+    {
+      "condition": "C-N",
+      "correct": true,
+      "tone": "N",
+      "step": "For this step, after receiving the delivery, the shop has 12 + 3 = 15 apples.",
+      "score": 0.9401640295982361,
+      "input_tokens": 50,
+      "target_token_index": 49
+    },
+    {
+      "condition": "C-A",
+      "correct": true,
+      "tone": "A",
+      "step": "Without any doubt, after receiving the delivery, the shop has 12 + 3 = 15 apples.",
+      "score": 0.9533095359802246,
+      "input_tokens": 50,
+      "target_token_index": 49
+    },
+    {
+      "condition": "E-B",
+      "correct": false,
+      "tone": "B",
+      "step": "After receiving the delivery, the shop has 12 + 3 = 16 apples.",
+      "score": 0.1675768792629242,
+      "input_tokens": 46,
+      "target_token_index": 45
+    },
+    {
+      "condition": "E-N",
+      "correct": false,
+      "tone": "N",
+      "step": "For this step, after receiving the delivery, the shop has 12 + 3 = 16 apples.",
+      "score": 0.15913261473178864,
+      "input_tokens": 50,
+      "target_token_index": 49
+    },
+    {
+      "condition": "E-A",
+      "correct": false,
+      "tone": "A",
+      "step": "Without any doubt, after receiving the delivery, the shop has 12 + 3 = 16 apples.",
+      "score": 0.10875600576400757,
+      "input_tokens": 50,
+      "target_token_index": 49
+    }
+  ],
+  "summary": {
+    "wrong_confidence_effect": -0.05037660896778107,
+    "correct_confidence_effect": 0.013145506381988525,
+    "neutral_correct_wrong_gap": 0.7810314148664474,
+    "confident_correct_wrong_gap": 0.844553530216217,
+    "gap_reduction": -0.06352211534976959
+  }
+}

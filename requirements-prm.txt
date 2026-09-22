@@ -1,0 +1,7 @@
+# Use the existing PyTorch installation in the prm-study environment.
+# Keep Transformers on a 4.x release compatible with the upstream PRM wrapper.
+transformers==4.46.3
+accelerate>=1.1,<2
+huggingface-hub>=0.26,<1
+safetensors>=0.4.3
+numpy

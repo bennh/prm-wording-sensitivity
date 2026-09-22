@@ -1,0 +1,20 @@
+{
+  "model": "Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B",
+  "device": "mps",
+  "purpose": "smoke test only",
+  "problem": "A shop has 12 apples and receives 3 more. It sells 2 apples. How many apples remain?",
+  "results": [
+    {
+      "label": "correct",
+      "step": "After receiving the delivery, the shop has 12 + 3 = 15 apples.",
+      "score": 0.9639497399330139,
+      "seconds": 3.583222665998619
+    },
+    {
+      "label": "incorrect",
+      "step": "After receiving the delivery, the shop has 12 + 3 = 16 apples.",
+      "score": 0.1675768792629242,
+      "seconds": 0.14530541695421562
+    }
+  ]
+}

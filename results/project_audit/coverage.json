@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "artifact": {
+    "identity": "PRM Project",
+    "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+    "view": "Local formal experiment, analysis, and figures"
+  },
+  "categories": [
+    {
+      "id": "usefulness",
+      "label": "项目完整性与复现",
+      "applicable": true,
+      "assessment": "核心管线已完成；新环境依赖说明仍缺分析绘图库，未做干净环境复现。"
+    },
+    {
+      "id": "clarity",
+      "label": "分析表达清晰度",
+      "applicable": true,
+      "assessment": "主要报告和三张图已检查；报告明确探索性和固定模板比较范围。"
+    },
+    {
+      "id": "visual",
+      "label": "图形一致性",
+      "applicable": true,
+      "assessment": "三张图沿用已检查的当前布局；图内无标题或说明，数值不变。"
+    },
+    {
+      "id": "authority",
+      "label": "来源可信度与可追溯性",
+      "applicable": true,
+      "assessment": "模型检查点及代码已核验；数据集上游 revision 未提供。"
+    },
+    {
+      "id": "values",
+      "label": "数值准确性",
+      "applicable": true,
+      "assessment": "独立复算统计表及三张图的基础数值；现有主要结论数值一致。"
+    },
+    {
+      "id": "within",
+      "label": "图内一致性",
+      "applicable": true,
+      "assessment": "三个图的标尺、点值和区间与统计结果一致。"
+    },
+    {
+      "id": "source-details",
+      "label": "来源信息完整性",
+      "applicable": true,
+      "assessment": "本地哈希链完整，外部数据集版本缺失；统计和模型来源已记录。"
+    },
+    {
+      "id": "cross",
+      "label": "跨文件一致性",
+      "applicable": true,
+      "assessment": "源数据、评分、分析和报告核对一致；运行时仅重算六条，未全部重算。"
+    },
+    {
+      "id": "quality",
+      "label": "数据质量控制",
+      "applicable": true,
+      "assessment": "500 题结构、正式/开发隔离、50 个算术编辑和 300 条配对输入核验通过。"
+    },
+    {
+      "id": "conclusions",
+      "label": "结论支持程度",
+      "applicable": true,
+      "assessment": "修正了确认性解释歧义，结论限于探索性固定措辞比较。"
+    }
+  ],
+  "units": [
+    {
+      "id": "dataset-provenance",
+      "label": "dataset-provenance",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "dataset-provenance-authority",
+              "state": "failed",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": [
+            {
+              "id": "dataset-provenance-gap-authority",
+              "status": "open",
+              "checkIds": [
+                "dataset-provenance-authority"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ]
+            }
+          ]
+        },
+        "source-details": {
+          "checks": [
+            {
+              "id": "dataset-provenance-source-details",
+              "state": "failed",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": [
+            {
+              "id": "dataset-provenance-gap-source-details",
+              "status": "open",
+              "checkIds": [
+                "dataset-provenance-source-details"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "model-provenance",
+      "label": "model-provenance",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "model-provenance-authority",
+              "state": "passed",
+              "evidence": [
+                "runtime_spotcheck.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "source-details": {
+          "checks": [
+            {
+              "id": "model-provenance-source-details",
+              "state": "passed",
+              "evidence": [
+                "runtime_spotcheck.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-pipeline",
+      "label": "data-pipeline",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "data-pipeline-quality",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "cross": {
+          "checks": [
+            {
+              "id": "data-pipeline-cross",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "usefulness": {
+          "checks": [
+            {
+              "id": "data-pipeline-usefulness",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "score-pipeline",
+      "label": "score-pipeline",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "score-pipeline-cross",
+              "state": "passed",
+              "evidence": [
+                "runtime_spotcheck.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "statistics-table",
+      "label": "statistics-table",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "values": {
+          "checks": [
+            {
+              "id": "statistics-table-values",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "cross": {
+          "checks": [
+            {
+              "id": "statistics-table-cross",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "source-details": {
+          "checks": [
+            {
+              "id": "statistics-table-source-details",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "usefulness": {
+          "checks": [
+            {
+              "id": "statistics-table-usefulness",
+              "state": "passed",
+              "evidence": [
+                "audit_evidence.json"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "figure-1",
+      "label": "figure-1",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "values": {
+          "checks": [
+            {
+              "id": "figure-1-values",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_1_condition_scores_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "figure-1-within",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_1_condition_scores_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "clarity": {
+          "checks": [
+            {
+              "id": "figure-1-clarity",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_1_condition_scores_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "figure-1-visual",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_1_condition_scores_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "figure-2",
+      "label": "figure-2",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "values": {
+          "checks": [
+            {
+              "id": "figure-2-values",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_2_question_effects_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "figure-2-within",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_2_question_effects_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "clarity": {
+          "checks": [
+            {
+              "id": "figure-2-clarity",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_2_question_effects_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "figure-2-visual",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_2_question_effects_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "figure-3",
+      "label": "figure-3",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "values": {
+          "checks": [
+            {
+              "id": "figure-3-values",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_3_gap_robustness_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "figure-3-within",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_3_gap_robustness_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "clarity": {
+          "checks": [
+            {
+              "id": "figure-3-clarity",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_3_gap_robustness_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "figure-3-visual",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/figure_3_gap_robustness_preview.png"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "analysis-report",
+      "label": "analysis-report",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "analysis-report-conclusions",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/analysis_report.md"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "clarity": {
+          "checks": [
+            {
+              "id": "analysis-report-clarity",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/analysis_report.md"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "cross": {
+          "checks": [
+            {
+              "id": "analysis-report-cross",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/analysis_report.md"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        },
+        "usefulness": {
+          "checks": [
+            {
+              "id": "analysis-report-usefulness",
+              "state": "passed",
+              "evidence": [
+                "../formal_analysis/analysis_report.md"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "environment-instructions",
+      "label": "environment-instructions",
+      "kind": "component",
+      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "environment-instructions-usefulness",
+              "state": "failed",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+            }
+          ],
+          "findings": [
+            {
+              "id": "environment-instructions-gap-usefulness",
+              "status": "open",
+              "checkIds": [
+                "environment-instructions-usefulness"
+              ],
+              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "evidence": [
+                "project_audit_report.md#来源与复现缺口"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

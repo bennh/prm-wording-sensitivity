@@ -1,0 +1,100 @@
+{
+  "scope": "Local artifacts; no independent upstream dataset match or training-contamination audit",
+  "source_rows": 500,
+  "eligible_rows": 132,
+  "formal_questions": 50,
+  "variants": 300,
+  "target_arithmetic_verified": 50,
+  "single_integer_edits_verified": 50,
+  "token_boundaries_reconstructed": 300,
+  "development_overlap": 0,
+  "prefix_score_spread": 0.0,
+  "token_length_range": [
+    52,
+    147
+  ],
+  "confident_minus_neutral_token_length_counts": {
+    "0": 50
+  },
+  "repeated_target_expressions": {
+    "2 * 12": [
+      "formal_024",
+      "formal_048"
+    ],
+    "4 * 5": [
+      "formal_031",
+      "formal_050"
+    ],
+    "9 * 5": [
+      "formal_040",
+      "formal_043"
+    ]
+  },
+  "statistics": {
+    "wrong_confidence_effect": {
+      "mean": 0.01432011365890503,
+      "ci_low": -0.0019326809868216515,
+      "ci_high": 0.031023032721132035
+    },
+    "correct_confidence_effect": {
+      "mean": 0.016526180803775787,
+      "ci_low": 0.00549743077158928,
+      "ci_high": 0.02763865199685096
+    },
+    "gap_reduction": {
+      "mean": -0.002206067144870758,
+      "ci_low": -0.02234102324396372,
+      "ci_high": 0.018261281792074438
+    },
+    "neutral_correct_wrong_gap": {
+      "mean": 0.43112980738282203,
+      "ci_low": 0.3780051029920578,
+      "ci_high": 0.4836438720673322
+    },
+    "confident_correct_wrong_gap": {
+      "mean": 0.4333358745276928,
+      "ci_low": 0.385771718647331,
+      "ci_high": 0.4799821908175945
+    },
+    "baseline_correct_wrong_gap": {
+      "mean": 0.46994645476341246,
+      "ci_low": 0.41707290218584236,
+      "ci_high": 0.5211334962714463
+    },
+    "wrong_neutral_vs_baseline": {
+      "mean": 0.009162021428346634,
+      "ci_low": -0.004822053957730532,
+      "ci_high": 0.023048079619184123
+    },
+    "wrong_confident_vs_baseline": {
+      "mean": 0.023482135087251662,
+      "ci_low": 0.009612125899642707,
+      "ci_high": 0.038036442335695024
+    }
+  },
+  "post_hoc_baseline_checks": {
+    "baseline_to_neutral_gap_reduction": {
+      "mean": 0.03881664738059044,
+      "ci_low": 0.022963903181254863,
+      "ci_high": 0.05452269610390064
+    },
+    "baseline_to_confident_gap_reduction": {
+      "mean": 0.036610580235719684,
+      "ci_low": 0.02034286133572459,
+      "ci_high": 0.05402358865365385
+    }
+  },
+  "environment": {
+    "torch": "2.14.0",
+    "transformers": "4.46.3",
+    "accelerate": "1.15.0",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "tokenizers": "0.20.3"
+  },
+  "python": "3.11.16",
+  "upstream_commit": "719b56b17447405e0f10e6c0360a581cf4ffa9c1",
+  "raw_scores_sha256": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+}

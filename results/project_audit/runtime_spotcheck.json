@@ -1,0 +1,47 @@
+{
+  "loaded_head_matches_checkpoint": true,
+  "checks": [
+    {
+      "formal_id": "formal_001",
+      "condition": "C-B",
+      "saved": 0.5642600059509277,
+      "recomputed": 0.5642600059509277,
+      "absolute_difference": 0.0
+    },
+    {
+      "formal_id": "formal_018",
+      "condition": "E-N",
+      "saved": 0.3047041893005371,
+      "recomputed": 0.3047041893005371,
+      "absolute_difference": 0.0
+    },
+    {
+      "formal_id": "formal_018",
+      "condition": "E-A",
+      "saved": 0.49418509006500244,
+      "recomputed": 0.49418509006500244,
+      "absolute_difference": 0.0
+    },
+    {
+      "formal_id": "formal_039",
+      "condition": "E-N",
+      "saved": 0.5996307134628296,
+      "recomputed": 0.5996307134628296,
+      "absolute_difference": 0.0
+    },
+    {
+      "formal_id": "formal_039",
+      "condition": "E-A",
+      "saved": 0.4210311472415924,
+      "recomputed": 0.4210311472415924,
+      "absolute_difference": 0.0
+    },
+    {
+      "formal_id": "formal_050",
+      "condition": "E-A",
+      "saved": 0.16644735634326935,
+      "recomputed": 0.16644735634326935,
+      "absolute_difference": 0.0
+    }
+  ]
+}

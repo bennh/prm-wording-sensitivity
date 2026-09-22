@@ -1,0 +1,36 @@
+{
+  "purpose": "development only",
+  "source_dataset": "HuggingFaceH4/MATH-500",
+  "source_split": "test",
+  "selection": "user selected, not random sampling",
+  "formal_exclude_problem_ids": [
+    "test/algebra/1004.json",
+    "test/intermediate_algebra/134.json",
+    "test/prealgebra/105.json",
+    "test/algebra/1265.json",
+    "test/algebra/2214.json"
+  ],
+  "templates": {
+    "B": "{step}",
+    "N": "For this step, {step}",
+    "A": "Without any doubt, {step}"
+  },
+  "template_note": "Lowercase the initial letter of the target sentence for N/A; prefix steps unchanged. No newline inside target step.",
+  "target_step_index_base": 0,
+  "reference_fields_not_for_model": [
+    "source_solution",
+    "answer",
+    "edit_reason",
+    "adaptation_note",
+    "review_status"
+  ],
+  "validation": {
+    "base_rows": 5,
+    "variants": 30,
+    "unique_problem_ids": 5,
+    "integer_result_plus_one_checked": true,
+    "shared_prefix_checked": true
+  },
+  "review_status": "user_reviewed",
+  "review_confirmation_date": "2026-09-22"
+}
