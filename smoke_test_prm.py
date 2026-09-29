@@ -1,8 +1,4 @@
-"""Small Skywork PRM check for Apple Silicon; not a research experiment.
-
-Uses the model owner's inference implementation in skywork-o1-prm-inference.
-Source: https://github.com/SkyworkAI/skywork-o1-prm-inference
-"""
+"""Small Skywork PRM check; not a research experiment."""
 
 import json
 import math
@@ -15,8 +11,6 @@ ROOT = Path(__file__).resolve().parent
 UPSTREAM = ROOT / "skywork-o1-prm-inference"
 MODEL_ID = "Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B"
 
-# Configure before importing Transformers / huggingface_hub. Use regular HTTP
-# after the Xet transport failed while downloading the checkpoint.
 os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "60")
 os.environ.setdefault("HF_HUB_ETAG_TIMEOUT", "30")
@@ -27,8 +21,6 @@ def download_checkpoint():
     import requests
     from huggingface_hub import constants, hf_hub_download
 
-    # hub 0.36 defaults to 10 MiB: this connection broke before one whole
-    # chunk arrived. Smaller chunks preserve progress before a disconnect.
     constants.DOWNLOAD_CHUNK_SIZE = 256 * 1024
     for attempt in range(1, 6):
         print(f"Downloading/checking weights (attempt {attempt}/5; keeping the existing cache)", flush=True)
@@ -74,7 +66,6 @@ def main():
         low_cpu_mem_usage=True,
         attn_implementation="sdpa",
     ).eval()
-    # The upstream value head is kept in float32 for scoring stability.
     model.v_head.to(device="mps", dtype=torch.float32)
     if not all(torch.isfinite(p).all().item() for p in model.v_head.parameters()):
         raise RuntimeError("The value head contains non-finite values.")

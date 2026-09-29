@@ -129,7 +129,6 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
     prepared = []
     for variant in variants:
-        # Reference solutions and answers are never passed to the tokenizer.
         ids, steps, flags = prepare_input(variant['problem'], variant['response'], tokenizer, step_token='\n')
         positions = [i for i, flag in enumerate(flags) if flag]
         require(len(steps) == len(positions) == len(variant['steps']), 'Unexpected step boundaries.')
@@ -149,7 +148,7 @@ def main():
               'upstream_code_sha256': {str(p.relative_to(upstream)): digest(p) for p in sorted((upstream/'model_utils').rglob('*.py'))}}
     output = args.output.expanduser().resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    # The OS releases the advisory lock even after an interruption or crash.
+    
     with output.with_suffix(output.suffix+'.lock').open('a') as lock:
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)

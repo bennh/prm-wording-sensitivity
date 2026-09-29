@@ -1,8 +1,5 @@
-"""Validate formal PRM scores and export paired statistics and publication figures.
+"""Validate formal PRM scores and export paired statistics and publication figures."""
 
-Run: python analyze_formal_prm.py
-Dependencies: numpy, matplotlib. No model weights or network access are needed.
-"""
 import argparse
 import csv
 import hashlib
@@ -113,7 +110,6 @@ def style():
 
 
 def save_figure(fig, directory, name):
-    # Fixed physical dimensions: about 180 mm wide for a two-column figure.
     for ext in ['pdf','svg','png']:
         fig.savefig(directory/f'{name}.{ext}', dpi=600 if ext=='png' else 150)
     fig.savefig(directory/f'{name}_preview.png', dpi=140)
@@ -195,7 +191,6 @@ def main():
     require(args.seed >= 0, 'Seed must be nonnegative.')
     payload,bases,matrix,prefix_spread=load_and_validate(args.input)
     metrics=paired_metrics(matrix)
-    # One shared resampling matrix preserves all within-question relationships.
     indices=np.random.default_rng(args.seed).integers(0,50,size=(args.bootstrap,50))
     conditions=estimate(matrix,indices);stats=estimate(metrics,indices)
     for k,s in zip(METRICS,stats):

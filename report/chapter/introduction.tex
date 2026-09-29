@@ -1,0 +1,5 @@
+Process reward models (PRMs) score intermediate reasoning steps and can help compare candidate solutions. Their scores should reflect whether a step is mathematically correct, but they may also depend on how it is worded. For example, adding ``Without any doubt'' does not change an arithmetic equality but may change the model's assessment.
+
+This study asks whether an incorrect step receives a higher score with a fixed phrase expressing confidence than with a neutral phrase. We also ask whether this change in wording reduces the score gap between the correct and incorrect versions of the same step. A higher score for the incorrect step does not necessarily mean a smaller gap because the score for the correct step may also rise.
+
+In our paired experiment, we change the wording while keeping the mathematical content and preceding context fixed. We construct 300 inputs from 50 questions and score each one. The evaluation focuses on the score given to the constructed target step in each input.

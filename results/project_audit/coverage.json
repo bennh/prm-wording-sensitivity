@@ -2,7 +2,7 @@
   "version": 1,
   "artifact": {
     "identity": "PRM Project",
-    "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+    "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
     "view": "Local formal experiment, analysis, and figures"
   },
   "categories": [
@@ -72,7 +72,7 @@
       "id": "dataset-provenance",
       "label": "dataset-provenance",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "authority": {
           "checks": [
@@ -82,7 +82,7 @@
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": [
@@ -92,7 +92,7 @@
               "checkIds": [
                 "dataset-provenance-authority"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ]
@@ -107,7 +107,7 @@
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": [
@@ -117,7 +117,7 @@
               "checkIds": [
                 "dataset-provenance-source-details"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ]
@@ -130,7 +130,7 @@
       "id": "model-provenance",
       "label": "model-provenance",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "authority": {
           "checks": [
@@ -140,7 +140,7 @@
               "evidence": [
                 "runtime_spotcheck.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -153,7 +153,7 @@
               "evidence": [
                 "runtime_spotcheck.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -164,7 +164,7 @@
       "id": "data-pipeline",
       "label": "data-pipeline",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "quality": {
           "checks": [
@@ -174,7 +174,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -187,7 +187,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -200,7 +200,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -211,7 +211,7 @@
       "id": "score-pipeline",
       "label": "score-pipeline",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "cross": {
           "checks": [
@@ -221,7 +221,7 @@
               "evidence": [
                 "runtime_spotcheck.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -232,7 +232,7 @@
       "id": "statistics-table",
       "label": "statistics-table",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "values": {
           "checks": [
@@ -242,7 +242,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -255,7 +255,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -268,7 +268,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -281,7 +281,7 @@
               "evidence": [
                 "audit_evidence.json"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -292,7 +292,7 @@
       "id": "figure-1",
       "label": "figure-1",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "values": {
           "checks": [
@@ -302,7 +302,7 @@
               "evidence": [
                 "../formal_analysis/figure_1_condition_scores_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -315,7 +315,7 @@
               "evidence": [
                 "../formal_analysis/figure_1_condition_scores_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -328,7 +328,7 @@
               "evidence": [
                 "../formal_analysis/figure_1_condition_scores_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -341,7 +341,7 @@
               "evidence": [
                 "../formal_analysis/figure_1_condition_scores_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -352,7 +352,7 @@
       "id": "figure-2",
       "label": "figure-2",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "values": {
           "checks": [
@@ -362,7 +362,7 @@
               "evidence": [
                 "../formal_analysis/figure_2_question_effects_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -375,7 +375,7 @@
               "evidence": [
                 "../formal_analysis/figure_2_question_effects_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -388,7 +388,7 @@
               "evidence": [
                 "../formal_analysis/figure_2_question_effects_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -401,7 +401,7 @@
               "evidence": [
                 "../formal_analysis/figure_2_question_effects_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -412,7 +412,7 @@
       "id": "figure-3",
       "label": "figure-3",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "values": {
           "checks": [
@@ -422,7 +422,7 @@
               "evidence": [
                 "../formal_analysis/figure_3_gap_robustness_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -435,7 +435,7 @@
               "evidence": [
                 "../formal_analysis/figure_3_gap_robustness_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -448,7 +448,7 @@
               "evidence": [
                 "../formal_analysis/figure_3_gap_robustness_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -461,7 +461,7 @@
               "evidence": [
                 "../formal_analysis/figure_3_gap_robustness_preview.png"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -472,7 +472,7 @@
       "id": "analysis-report",
       "label": "analysis-report",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "conclusions": {
           "checks": [
@@ -482,7 +482,7 @@
               "evidence": [
                 "../formal_analysis/analysis_report.md"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -495,7 +495,7 @@
               "evidence": [
                 "../formal_analysis/analysis_report.md"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -508,7 +508,7 @@
               "evidence": [
                 "../formal_analysis/analysis_report.md"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -521,7 +521,7 @@
               "evidence": [
                 "../formal_analysis/analysis_report.md"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": []
@@ -532,7 +532,7 @@
       "id": "environment-instructions",
       "label": "environment-instructions",
       "kind": "component",
-      "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+      "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
       "categories": {
         "usefulness": {
           "checks": [
@@ -542,7 +542,7 @@
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4"
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85"
             }
           ],
           "findings": [
@@ -552,7 +552,7 @@
               "checkIds": [
                 "environment-instructions-usefulness"
               ],
-              "revision": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+              "revision": "7fde008d4eb5eeac4cde537d70ee69a64df0ae00eff3f350577986c39f750e85",
               "evidence": [
                 "project_audit_report.md#来源与复现缺口"
               ]

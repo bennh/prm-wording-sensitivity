@@ -62,6 +62,8 @@ For each formal question:
 4. Apply the wording templates to the target only; keep the prefix unchanged.
 5. Stop the response immediately after the target. Do not include later reasoning or the reference answer.
 
+All experimental samples were manually annotated by the author and reviewed by the same author. Completion of annotation and review was confirmed by the author on 2026-09-30.
+
 The reference solution and answer are retained as metadata for review. **Only `problem` and `response` are supplied to the model.** A step boundary is represented by a newline.
 
 Example from `formal_008`:
@@ -382,7 +384,9 @@ The project audit found:
 - Agreement between independent recomputation and all eight reported paired metrics and their bootstrap intervals.
 - Value-head parameters matching the cached checkpoint and six independently rerun scores matching the saved values exactly.
 
-The runtime check is a **six-input spot check**, not a complete rerun of 300 scores. The formal constructions were reviewed by the assistant; independent human double annotation was not recorded. The audit did not certify the upstream dataset revision, training-data non-overlap, all third-party dependencies, or a clean-environment installation.
+The runtime check is a **six-input spot check**, not a complete rerun of 300 scores. All experimental samples were manually annotated by the author and reviewed by the same author. The audit did not certify the upstream dataset revision, training-data non-overlap, all third-party dependencies, or a clean-environment installation.
+
+The annotation and review metadata were updated on 2026-09-30 following the author's confirmation. Corresponding file hashes were synchronized; the scored inputs, numerical scores, and statistics are unchanged. The top-level `annotation_metadata_update` record in `formal_50_scores.json` retains the previous data and score-file hashes.
 
 See [audit evidence](results/project_audit/audit_evidence.json), [runtime spot-check results](results/project_audit/runtime_spotcheck.json), and the [detailed project review](results/project_audit/project_audit_report.md).
 

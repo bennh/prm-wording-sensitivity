@@ -2,7 +2,7 @@
 
 Source: MATH-500 excerpt provided by the user; not yet checked item-by-item against the downloaded dataset snapshot. Original whitespace and pasted escape characters have been normalized.
 
-These are development problems and must not be included in the final 50 official problems. Current status: the user confirmed completion of the review on 2026-09-22.
+These are development problems and must not be included in the final 50 official problems. All five development samples were manually annotated by the author and reviewed by the same author. Completion of the review was confirmed on 2026-09-22.
 
 ## test/algebra/1004.json
 

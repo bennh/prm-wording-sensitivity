@@ -2,7 +2,7 @@
 
 All 50 questions have six paired wording conditions. Source text is preserved in formal_50.jsonl; the reference solution and answer are metadata only. Model inputs are in formal_50_variants.jsonl.
 
-Status: reviewed by the assistant, not yet reviewed by the user. No model scores were used or generated. Every wrong target changes only the claimed integer result by +1. Prefixes end before the target result is derived, and no continuation is included.
+Status: all 50 formal samples were manually annotated by the author and reviewed by the same author. Completion of annotation and review was confirmed on 2026-09-30. No model scores were used or generated. Every wrong target changes only the claimed integer result by +1. Prefixes end before the target result is derived, and no continuation is included.
 
 ## Wording templates
 

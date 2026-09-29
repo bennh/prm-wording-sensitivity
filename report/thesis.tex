@@ -1,0 +1,323 @@
+\documentclass[11pt,a4paper]{article}
+
+% =========================================================
+% Encoding and typography
+% =========================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{newtxtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{newtxmath}
+\usepackage{microtype}
+
+% =========================================================
+% Page layout
+% =========================================================
+\usepackage[
+  a4paper,
+  top=25mm,
+  bottom=27mm,
+  left=26mm,
+  right=26mm,
+  headheight=14pt,
+  headsep=8mm,
+  footskip=12mm
+]{geometry}
+
+\usepackage{setspace}
+\setstretch{1.08}
+
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+
+% =========================================================
+% Mathematics, figures, and tables
+% =========================================================
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{placeins}
+
+\usepackage[
+  font=small,
+  labelfont=bf,
+  labelsep=period,
+  justification=justified,
+  singlelinecheck=true,
+  skip=6pt
+]{caption}
+\usepackage{subcaption}
+\captionsetup[table]{position=top}
+\captionsetup[subfigure]{font=footnotesize}
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{6pt}
+
+\setlength{\textfloatsep}{16pt plus 3pt minus 3pt}
+\setlength{\floatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{12pt plus 2pt minus 2pt}
+
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\bottomfraction}{0.80}
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+
+% =========================================================
+% Lists
+% =========================================================
+\usepackage{enumitem}
+\setlist{
+  topsep=5pt,
+  itemsep=2pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=*
+}
+
+% =========================================================
+% Section headings
+% =========================================================
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {\thesection}
+  {0.65em}
+  {}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {\thesubsection}
+  {0.65em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\itshape}
+  {\thesubsubsection}
+  {0.65em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}{18pt plus 3pt minus 2pt}{7pt}
+
+\titlespacing*{\subsection}
+  {0pt}{12pt plus 2pt minus 2pt}{5pt}
+
+\titlespacing*{\subsubsection}
+  {0pt}{10pt plus 2pt minus 2pt}{4pt}
+
+\setcounter{secnumdepth}{3}
+
+% =========================================================
+% References and links
+% =========================================================
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+\setlength{\bibsep}{4pt}
+\renewcommand{\bibfont}{\small}
+
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{244A70}
+
+\usepackage[
+  colorlinks=true,
+  linkcolor=linkblue,
+  citecolor=linkblue,
+  urlcolor=linkblue,
+  bookmarksnumbered=true,
+  pdfdisplaydoctitle=true
+]{hyperref}
+\usepackage{bookmark}
+
+\hypersetup{
+  pdftitle={
+    Confidence Wording and Process Reward Scoring:
+    A Controlled Study of Mathematical Reasoning Steps
+  },
+  pdfauthor={Binheng Zheng and Yuefeiyang Li},
+  pdfsubject={Process Reward Modeling in LLMs},
+  pdfkeywords={
+    process reward modeling,
+    mathematical reasoning,
+    confidence wording,
+    large language models
+  }
+}
+\urlstyle{same}
+
+% =========================================================
+% Running header and page numbers
+% =========================================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{%
+  \footnotesize\itshape
+  Confidence Wording and Process Reward Scoring
+}
+\fancyhead[R]{%
+  \footnotesize Zheng
+}
+\fancyfoot[C]{\small\thepage}
+
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{firstpage}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% =========================================================
+% Compatibility with existing chapter files
+%
+% Main chapters become article sections.
+% Within each imported chapter:
+%   \section       -> \subsection
+%   \subsection    -> \subsubsection
+%   \subsubsection -> \paragraph
+%
+% Starred headings and optional short titles remain supported.
+% =========================================================
+\let\ArticleSubsection\subsection
+\let\ArticleSubsubsection\subsubsection
+\let\ArticleParagraph\paragraph
+
+\newcommand{\inputchapter}[1]{%
+  \begingroup
+    \let\section\ArticleSubsection
+    \let\subsection\ArticleSubsubsection
+    \let\subsubsection\ArticleParagraph
+    \input{#1}%
+    \par
+  \endgroup
+}
+
+% Add any custom commands or environments from header.tex here.
+\input{results_values.tex}
+
+% =========================================================
+% Document
+% =========================================================
+\begin{document}
+\rmfamily
+\pagenumbering{arabic}
+\thispagestyle{firstpage}
+
+% ---------------------------------------------------------
+% Compact journal-style title block
+% ---------------------------------------------------------
+\begin{center}
+  \vspace*{2mm}
+
+  {\LARGE\bfseries
+    Confidence Wording and Process Reward Scoring:\par
+  }
+  \vspace{3mm}
+  {\Large\bfseries
+    A Controlled Study of Mathematical Reasoning Steps\par
+  }
+
+  \vspace{7mm}
+
+  {\large
+    Binheng Zheng
+    \par
+  }
+
+  \vspace{3mm}
+
+  {\small
+    Heidelberg University 
+    \par
+  }
+
+  \vspace{3mm}
+
+  {\footnotesize
+    \href{mailto:binheng.zheng@stud.uni-heidelberg.de}
+      {binheng.zheng@stud.uni-heidelberg.de}
+    \par
+  }
+ 
+\end{center}
+
+\vspace{3mm}
+
+% ---------------------------------------------------------
+% Abstract
+% ---------------------------------------------------------
+\begin{abstract}
+  \small
+  \setstretch{1.04}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{4pt}
+  \input{chapter/abstract.tex}
+\end{abstract}
+
+\vspace{2mm}
+
+% ---------------------------------------------------------
+% Main text
+% ---------------------------------------------------------
+\section{Introduction}
+\label{c.introduction}
+\inputchapter{chapter/introduction.tex}
+
+\section{Related Work}
+\label{c.related}
+\inputchapter{chapter/related.tex}
+
+\section{Methods}
+\label{c.methods}
+\inputchapter{chapter/methods.tex}
+\FloatBarrier
+
+\section{Experiments}
+\label{c.experiments}
+\inputchapter{chapter/experiments.tex}
+
+% Keep experimental figures and tables before the discussion.
+\FloatBarrier
+
+\section{Discussion}
+\label{c.discussion}
+\inputchapter{chapter/discussion.tex}
+
+\section{Conclusion}
+\label{c.conclusion}
+\inputchapter{chapter/conclusion.tex}
+
+\FloatBarrier
+\label{page.nonreferences.end}
+
+% ---------------------------------------------------------
+% References
+% ---------------------------------------------------------
+\begingroup
+  \small
+  \singlespacing
+  \setlength{\bibsep}{4pt}
+  \bibliography{references}
+\endgroup
+
+\end{document}

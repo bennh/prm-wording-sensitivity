@@ -1,8 +1,5 @@
-"""Independently audit the frozen local PRM artifacts without model inference.
+"""Independently audit the frozen local PRM artifacts without model inference."""
 
-Run from the project environment: python audit_project.py
-Outputs are written only to results/project_audit. Existing experimental data are read-only.
-"""
 import ast
 import collections
 import hashlib
@@ -58,7 +55,6 @@ def main():
         n=integer_expression(base['target_expression_python'])
         check(n==base['correct_result'] and n+1==base['incorrect_result'],'Invalid arithmetic label')
         c,e=base['correct_step'],base['incorrect_step']
-        # Numeric tokens may occur in the expression; only the final result changes.
         numbers=list(re.finditer(r'-?\d+',c));last=numbers[-1]
         check(int(last.group())==n,'Target text does not match arithmetic metadata')
         check(c[:last.start()]+str(n+1)+c[last.end():]==e,'Error changes more than the final integer')
@@ -103,7 +99,6 @@ def main():
     rng=np.random.default_rng(analysis['seed']);idx=rng.integers(0,50,(analysis['bootstrap_replicates'],50))
     independently_recomputed={}
     for name,a in values.items():
-        # Independent one-metric computation; do not import the analysis helper.
         ci=np.quantile(np.sum(a[idx],axis=1)/50,[.025,.975])
         expected=analysis['paired_statistics'][name]
         check(abs(float(a.mean())-expected['mean'])<1e-12 and np.allclose(ci,[expected['ci_low'],expected['ci_high']],rtol=0,atol=1e-12),'Analysis mismatch: '+name)

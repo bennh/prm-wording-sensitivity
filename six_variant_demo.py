@@ -7,7 +7,6 @@ import os
 import sys
 from pathlib import Path
 
-# Read only the model already downloaded by smoke_test_prm.py.
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 

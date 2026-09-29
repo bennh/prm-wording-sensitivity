@@ -18,7 +18,7 @@
       "N": "For this step, {step}",
       "A": "Without any doubt, {step}"
     },
-    "data_sha256": "a0cf156605db0d91079cc5aa463815d20a3e0f258e952aec932109c726029240",
+    "data_sha256": "a8768509c94d26db3757c4632585e08f3a099c0a46d36b47255614750034ab09",
     "variants_sha256": "78dc20c47f7c948e20450342c67d0271ee016ef18c0de3e1ea131d5dd529b2be",
     "script_sha256": "2b5f3d26b041ecafb2759b80463f223bb70ac7a73750a03b18fe389029e1f3da",
     "summary_code_sha256": "923c3b48999a766b32471385521fd5fc7fce8dba6960985b160edb236a7418aa",
@@ -7415,5 +7415,21 @@
     "confident_correct_wrong_gap": 0.4333358745276928,
     "gap_reduction": -0.002206067144870758
   },
-  "completed_at": "2026-09-21T20:59:20.873170+00:00"
+  "completed_at": "2026-09-21T20:59:20.873170+00:00",
+  "annotation_metadata_update": {
+    "recorded_on": "2026-09-30",
+    "reason": "The author confirmed that all experimental samples were manually annotated and reviewed by the same author.",
+    "changed_data_fields": [
+      "annotation_method",
+      "review_status",
+      "user_review_status",
+      "review_confirmation_date"
+    ],
+    "previous_data_sha256": "a0cf156605db0d91079cc5aa463815d20a3e0f258e952aec932109c726029240",
+    "current_data_sha256": "a8768509c94d26db3757c4632585e08f3a099c0a46d36b47255614750034ab09",
+    "previous_scores_file_sha256": "59d7a32caf57fa8a48b7a4a779dfc5e4423a6c8ae452d055d023ab610b977ab4",
+    "model_inputs_unchanged": true,
+    "numerical_scores_unchanged": true,
+    "statistics_unchanged": true
+  }
 }

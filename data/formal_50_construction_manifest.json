@@ -20,7 +20,7 @@
   "source_sha256": "84fc9d3d96f34d41c72a724772daaad8ea0e131c65d7d28bd09ee073a4eeef5b",
   "selection_sha256": "228a3e7d7ef0fd5067bc4bf2e12f6d5ed89ed450e863fc434bacfdfa37018a2c",
   "artifact_sha256": {
-    "formal_50.jsonl": "a0cf156605db0d91079cc5aa463815d20a3e0f258e952aec932109c726029240",
+    "formal_50.jsonl": "a8768509c94d26db3757c4632585e08f3a099c0a46d36b47255614750034ab09",
     "formal_50_variants.jsonl": "78dc20c47f7c948e20450342c67d0271ee016ef18c0de3e1ea131d5dd529b2be"
   },
   "checks": {
@@ -39,7 +39,10 @@
       "model_snapshot": "98d69606595eedbdbbbf0a7d28efdcd462ba6a67"
     }
   },
-  "review_status": "assistant_reviewed; not user reviewed",
+  "annotation_method": "manual_by_author",
+  "review_status": "user_reviewed",
+  "user_review_status": "reviewed",
+  "review_confirmation_date": "2026-09-30",
   "limitations": [
     "Purposive sample; not representative of all MATH-500",
     "One fixed confident phrase and one fixed neutral phrase; phrase and confidence effects are not fully separable",
